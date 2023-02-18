@@ -1,0 +1,92 @@
+*{
+    margin: 0;padding: 0;
+    font-family: sans-serif;
+}
+body{
+   background-image: url(./assets/home/background-home-desktop.jpg);
+   background-size: cover;
+   width: 100%;
+   height: 100vh;
+}
+/****************************/
+       /* Header */
+/****************************/
+.head{
+   position: fixed;
+   top: 30px;
+   width: 100%;
+   height: 86px;
+   /* background: aliceblue; */
+   display: flex;
+   justify-content: space-around;
+}
+.head .logo{
+    
+}
+.head .nav{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #c3c0c054;
+   width: 45%;
+   position: relative;
+   height: 86px;
+}
+.head .nav::before{
+   content: '';
+   width: 400px;
+   height: 1px;
+   background-color: #adabab91;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 547px;
+}
+.head .nav .list {
+   list-style: none;
+   padding: 32px 20px;
+   cursor: pointer;
+}
+.head .nav .list:hover{
+   border-bottom: 2px solid white;
+   /* transition: .5s; */
+}
+.head .nav .list a {
+   text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.head .nav .list a b {
+}
+
+/****************************/
+       /* Main */
+/****************************/
+.main {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100vh;
+   margin: 0 42px;
+}
+.main .left{
+   width: 33%;
+   color: white;
+}
+.main .left p{
+   text-align: justify;
+   color: #ffffff96;
+   line-height: 1.5;
+}
+.main .left p span{
+   text-transform: uppercase;
+    letter-spacing: 3px;
+    color: gray;
+    font-weight: bold;
+}
+.main .left p small{
+   text-transform: uppercase;
+   font-size: 7.7em;
+   font-weight: normal;
+}
