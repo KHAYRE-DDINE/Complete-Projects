@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Slab:wght@300;400&display=swap');
 *{
     margin: 0;padding: 0;
     font-family: sans-serif;
@@ -5,8 +6,9 @@
 body{
    background-image: url(./assets/home/background-home-desktop.jpg);
    background-size: cover;
-   width: 100%;
-   height: 100vh;
+   width: calc(100% - 30px);
+   height: 87vh;
+   margin: 30px;
 }
 /****************************/
        /* Header */
@@ -18,29 +20,34 @@ body{
    height: 86px;
    /* background: aliceblue; */
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
+   align-items: center;
 }
 .head .logo{
-    
+   margin-left: 33px;
+
 }
-.head .nav{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: #c3c0c054;
-   width: 45%;
-   position: relative;
-   height: 86px;
+
+.head .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c3c0c054;
+    width: 44%;
+    position: relative;
+    height: 86px;
+    /* right: -151px; */
+    padding-right: 141px;
 }
 .head .nav::before{
    content: '';
-   width: 400px;
+   width: 520px;
    height: 1px;
    background-color: #adabab91;
    position: absolute;
    top: 50%;
    transform: translateY(-50%);
-   right: 547px;
+   left: -67%;
 }
 .head .nav .list {
    list-style: none;
@@ -53,11 +60,15 @@ body{
 }
 .head .nav .list a {
    text-decoration: none;
-    color: white;
+   color: #f1f1f1;
     text-transform: uppercase;
     font-size: 12px;
 }
 .head .nav .list a b {
+   color: white;
+   font-weight: 900;
+   letter-spacing: 1px;
+   margin-right: 2px;
 }
 
 /****************************/
@@ -67,12 +78,14 @@ body{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 100vh;
+   height: calc(100vh - 30px);
    margin: 0 42px;
 }
 .main .left{
    width: 33%;
    color: white;
+   margin-left: 67px;
+   margin-top: 145px;
 }
 .main .left p{
    text-align: justify;
@@ -85,8 +98,26 @@ body{
     color: gray;
     font-weight: bold;
 }
-.main .left p small{
+.main .left p small {
    text-transform: uppercase;
    font-size: 7.7em;
-   font-weight: normal;
+   font-family: 'Roboto Slab', serif;
+   font-weight: 100;
+   color: white;
+}
+.main .right  {
+   margin-right: 111px;
+   margin-top: 145px;
+}
+.main .right p {
+   background-color: white;
+   border-radius: 50%;
+   width: 200px;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 24px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
 }

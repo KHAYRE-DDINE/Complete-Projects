@@ -1,0 +1,115 @@
+* {
+}
+
+body {
+  background-image: url(./assets/destination/background-destination-desktop.jpg);
+}
+
+
+/****************************/
+       /* Header */
+/****************************/
+.head .nav::before {
+    width: 417px;
+    left: -49%;
+}
+.head .nav {
+    width: 50%;
+}
+
+/****************************/
+       /* Main Left */
+/****************************/
+.main .left .title{
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 21px;
+    margin-top: 67px;
+}
+.main .left {
+    width: 33%;
+    color: white;
+    margin-left: 67px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main .left span {
+    color: gray;
+    letter-spacing: 1px;
+}
+.main .image {
+    width: 350px;
+    height: 350px;
+    margin-left: 63px;
+    margin-top: 70px;
+}
+.main .image img {
+  width: 100%;
+  height: 100%;
+}
+
+/****************************/
+       /* Main Right */
+/****************************/
+.main .right {
+    margin-right: 111px;
+    margin-top: 132px;
+}
+.main .right .planets {
+    color: #ffffffb0;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.main .right .planets span {
+    letter-spacing: 2px;
+    font-weight: normal;
+    padding-bottom: 9px;
+    margin-right: 13px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.main .right .planets span.show,
+.main .right .planets span:hover{
+    border-bottom: 2px solid;
+}
+
+.title .h1 {
+    color: white;
+    font-weight: normal;
+    font-size: 104px;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+    font-family: math;
+}
+.title .para{
+}
+.para small {
+    line-height: 21px;
+    display: block;
+    color: #ffffffb0;
+    border-bottom: 1px solid #ffffff52;
+    padding-bottom: 34px;
+}
+.info {
+    display: flex;
+    justify-content: start;
+    text-transform: uppercase;
+}
+.info section {
+    margin-top: 6px;
+    margin-right: 48px;
+    color: white;
+    font-size: 21px;
+    font-weight: 100;
+    font-family: system-ui;
+}
+.info .month {
+
+}
+.info small{
+    color: #ffffff94;
+    font-size: 10px;
+}

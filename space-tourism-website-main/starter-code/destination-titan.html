@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
 
-  01 Pick your destination
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="destination.css" />
+  </head>
+  <body>
+    <header class="head">
+      <div class="logo">
+        <img src="./assets/favicon-32x32.png" alt="" />
+      </div>
+      <nav class="nav">
+        <li class="list">
+          <a href=""><b>00</b> home</a>
+        </li>
+        <li class="list">
+          <a href=""><b>01</b> destination</a>
+        </li>
+        <li class="list">
+          <a href=""><b>02</b> crew</a>
+        </li>
+        <li class="list">
+          <a href=""><b>03</b> technology</a>
+        </li>
+      </nav>
+    </header>
 
-  Moon
-  Mars
-  Europa
-  Titan
+    <main class="main">
+      <section class="left">
+        <h2 class="title"><span>01</span> pick your destination</h2>
+        <div class="image">
+          <img src="./assets/destination/image-moon.png" alt="" />
+        </div>
+      </section>
+      <section class="right">
+        <div class="planets">
+          <span data-index="0" class="show">moon</span>
+          <span data-index="1">mars</span>
+          <span data-index="2">europa</span>
+          <span data-index="3">titan</span>
+        </div>
+        <div class="title"><h1 class="h1">mars</h1></div>
+        <div class="para">
+          <small>Don't forget to pack your hiking boots. You'll need them <br>
+          to tackle Olympus Mons, the tallest planetary mountain in <br>
+        our solar system. it's two and a half times the size of <br> Everest!</small>
+        </div>
+        <div class="info">
+          <div class="distance">
+            <section class="street"><small>avg. distance</small><br>225 mil. km</section>
+          </div>
+          <div class="date">
+            <section class="month"><small>est. travel time</small><br>9 months</section>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  Titan
-
-  The only moon known to have a dense atmosphere other than Earth, Titan 
-  is a home away from home (just a few hundred degrees colder!). As a 
-  bonus, you get striking views of the Rings of Saturn.
-
-  Avg. distance
-  1.6 bil. km
-
-  Est. travel time
-  7 years
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
